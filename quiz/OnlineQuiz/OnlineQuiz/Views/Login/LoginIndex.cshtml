@@ -1,0 +1,37 @@
+﻿@model OnlineQuiz.Models.Login
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Welcome to Online Quiz</h2>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    
+    @using(Html.BeginForm("Login", "Login")){
+       <table class="table" style="clear: both; border-collapse: collapse; width: 50%;">
+        
+       
+           <tr>
+                <td>Username</td>
+                <td>@Html.TextBoxFor(model => model.Username)</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>@Html.PasswordFor(model => model.Password)</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type ="submit" value ="Login" /></td>
+             </tr>
+       </table>
+    }
+</body>
+</html>

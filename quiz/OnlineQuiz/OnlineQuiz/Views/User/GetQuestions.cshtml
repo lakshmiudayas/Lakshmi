@@ -1,0 +1,84 @@
+﻿@model  OnlineQuiz.Models.Admin
+
+@{
+    ViewBag.Title = "GetQuestions";
+}
+<h2>Try your BEST</h2>
+@using (Html.BeginForm()) {
+  <fieldset>
+    <legend>Login</legend>
+
+    <div class="editor-label">
+         @Html.DisplayFor(model => model.Question)
+    </div>
+    <div>
+          @Html.RadioButtonFor(model=>model.SelectedAnswer,Model.ID)
+          @Html.DisplayFor(model => model.Option1)
+    </div>
+    <div>
+          @Html.RadioButtonFor(model=>model.SelectedAnswer,Model.ID)
+          @Html.DisplayFor(model => model.Option2)
+    </div>
+    <div>
+          @Html.RadioButtonFor(model=>model.SelectedAnswer,Model.ID)
+          @Html.DisplayFor(model => model.Option3)
+   </div>
+   <div>
+          @Html.RadioButtonFor(model=>model.SelectedAnswer,Model.ID)
+          @Html.DisplayFor(model => model.Option4)
+   </div>
+    <div class="editor-label">
+       @Html.LabelFor(model => model.SelectedAnswer)
+   </div>
+     <p>
+         <input id="submit1" type="submit" value="submit" />
+     </p>
+</fieldset>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
